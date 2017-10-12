@@ -1,0 +1,15 @@
+{
+  "name": "wdi-exercises",
+  "version": "1.0.0",
+  "description": "Practice exercises for javascript students.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Kay Hudson",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
