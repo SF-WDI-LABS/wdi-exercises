@@ -22,12 +22,15 @@ app.get('/', function (req, res) {
 app.get('/greet', function (req, res) {
     // The response should send a 'Hello'
     // EXTRA: If a query 'q' is sent, return it with the greeting
-    res.send('Hello!')
+    let q = req.query.q;
+    res.send(`Hello ${q}!`);
 });
 
 app.get('/greet/:name', function (req, res) {
     // This should use a query string with a person's name
     // The response send a personalized 'Hello'
+    let name = req.params.name;
+    res.send(`Hello ${name}`)
 });
 
 /* =============================================================
