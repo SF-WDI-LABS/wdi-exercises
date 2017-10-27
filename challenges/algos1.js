@@ -2,7 +2,7 @@
  * paginate(data)
  *
  * Create a function that takes a list of data and:
- * - returns 20 items at a time
+ * - returns 10 items at a time
  * - the 20 items contain only unique authors
  * - non-unique entries should be spread across the pages that follow.
  *
@@ -25,7 +25,9 @@ function paginate(data) {
  * The url may contain http or https
  * The domain extension can contain the following: .com, .net, .org, .io
  * Must return only the domain.
- * Sub-domains are allowed (ex. http://employees.domain.org
+ * Sub-domains are allowed (ex. http://employees.domain.org)
+ * 
+ * If it's not a valid url return "Invalid url."
  *
  */
 function parseUrl(url) {
@@ -63,7 +65,9 @@ function redact(words, obj) {
  *
  * Do not count white space.
  * Count only alphabetical characters
- * Don not count numbers.
+ * Do not count numbers.
+ *
+ * If str is not a String return a TypeError.
  */
 function charCounter(str) {
     // code here
@@ -78,12 +82,14 @@ function charCounter(str) {
  * @params n: The position or order of the number in the Fibonacci sequence.
  *
  * Ex. Fibonacci sequence
- * [0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ....]
- * fibFinder(8)
+ * 1, 1, 2, 3, 5, 8, 13, 21, 34 ....
+ * fibFinder(7)
  * > 13
  *
- * fibFinder(10)
+ * fibFinder(9)
  * > 34
+ * 
+ * If n is not a valid number of the sequence return "Invalid number."
  */
 function fibFinder(n) {
     // code here
